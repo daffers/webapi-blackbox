@@ -1,6 +1,11 @@
 # webapi-setup-template
 A simple template for a setup class for WebApi projects. The intention is that all site setup and config is managed through classes dervived from this (apart from the generation of the IDependencyResolver) which would be used both to configure the HttpConfiguration object from GlobalConfiguration.Configuration property, and a HttpConfiguration object created for the purpose of end to end in memory testing using something like the [WebApi.Testing](https://github.com/jchannon/WebAPI.Testing) project. 
 
+###Build Status
+[![Build status](https://ci.appveyor.com/api/projects/status/u2riv0c1dlxvvx3f?svg=true)](https://ci.appveyor.com/project/DafyddGiddins/ntextcat-http)
+
+## In memory end to end testing in WebApi
+
 To enable the end to end in memory testing scenario, you would create a class that built the IDependencyResolver instance. You would write this class so that dependencies on types that write to database or external services are configured thorugh virtual methods. For the in memory testing you would create a derivative of this class and override the methods for building external services so that you can specify TestDoubles and modify their behaviour for different tests. For example:
 
 ```csharp

@@ -2,7 +2,7 @@
 A simple template for a setup class for WebApi projects. The intention is that all site setup and config is managed through classes dervived from this (apart from the generation of the IDependencyResolver) which would be used both to configure the HttpConfiguration object from GlobalConfiguration.Configuration property, and a HttpConfiguration object created for the purpose of end to end in memory testing using something like the [WebApi.Testing](https://github.com/jchannon/WebAPI.Testing) project. 
 
 ###Build Status
-[![Build status](https://ci.appveyor.com/api/projects/status/u2riv0c1dlxvvx3f?svg=true)](https://ci.appveyor.com/project/DafyddGiddins/ntextcat-http)
+[![Build status](https://ci.appveyor.com/api/projects/status/w4ngbbgbk9r2abm5/branch/master?svg=true)](https://ci.appveyor.com/project/DafyddGiddins/webapi-setup-template/branch/master)
 
 ## In memory end to end testing in WebApi
 

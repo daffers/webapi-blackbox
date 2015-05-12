@@ -3,7 +3,7 @@ A simple template for a setup class for WebApi projects. The intention is that a
 
 To enable the end to end in memory testing scenario, you would create a class that built the IDependencyResolver instance. You would write this class so that dependencies on types that write to database or external services are configured thorugh virtual methods. For the in memory testing you would create a derivative of this class and override the methods for building external services so that you can specify TestDoubles and modify their behaviour for different tests. For example:
 
-'''c#
+'''
 public class DependencyResolverBuilder
 {
   public IDependencyResolver Build()
